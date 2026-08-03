@@ -10,4 +10,4 @@ alias obsidian="~/Obsidian/Obsidian-1.9.12.AppImage"
 alias whilehex="while read -r line; do echo -e $line; done"
 alias temp="paste <(cat /sys/class/thermal/thermal_zone0/type) <(cat /sys/class/thermal/thermal_zone0/temp) | column -s $'\t' -t | sed 's/\(.\)..$/.\1°C/'"
 alias sage-activate="conda activate; conda activate sage"
-
+alias sage-deactivate="conda deactivate; conda deactivate"
