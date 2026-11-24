@@ -6,9 +6,9 @@ function parse_git_branch() {
 		STAT=`parse_git_dirty`
 		if [ ! "${STAT}" == "" ]
 		then
-			echo "$(tput setaf 3)[${BRANCH}${STAT}] "
+			echo $'\001'$(tput setaf 3)$'\002'"[${BRANCH}${STAT}] "
 		else
-			echo "$(tput setaf 2)[${BRANCH}${STAT}] "
+			echo $'\001'$(tput setaf 2)$'\002'"[${BRANCH}${STAT}] "
 		fi
 	else
 		echo ""
